@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot Beans</title>
+    <link href="CSS/style.css" rel = "stylesheet" type="text/css">
+    <link href="CSS/master.css" rel = "stylesheet" type="text/css">
+    <link rel="icon" href="assets/icon.png">
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <my-header></my-header>
+    <section class="s1">
+        <img src="assets/images/laptop_woman.jpg" alt=""> 
+    </section>
+    <section class="s2">
+        <img src="assets/images/product.jpg" alt="" class = "i1">
+        <div class="textbox i2">
+            <h1>About the Company</h1>
+            <p>
+                Our web design company is dedicated to crafting captivating digital experiences that elevate brands and engage audiences. With a focus on innovative design and cutting-edge technology, we specialize in creating bespoke websites tailored to our clients' unique needs and objectives.
+            </p>
+            <div class="btn"><a href="aboutus.html">Read more</a></div>
+        </div>
+        <img src="assets/images/studio.jpg" alt="" class="i3">
+        <div class="i4">
+            <strong>Where Innovation Meets Design <i>Excellence</i></strong>
+        </div>
+        <img src="assets/images/proeject2.jpg" alt="" class="i5">
+        <img src="assets/images/project3.jpg" alt="" class="i6">
+        <div class="textbox i7">
+            <h1>Meet Our Team</h1>
+            <p>
+                Our diverse and talented team is the heartbeat of our web design company. Comprising seasoned designers, skilled developers, and visionary strategists, we bring a wealth of expertise and creativity to every project. United by our passion for innovation and commitment to excellence, we collaborate seamlessly to transform ideas into stunning digital realities.
+            </p>
+            <div class="btn"><a href="theteam.html">Read more</a></div>
+        </div>
+        <img src="assets/images/studio2.jpg" alt="" class="i8">
+    </section>
+    <section class="s3">
+        <h1>Code the Future, Design the Now: Your Web Vision, Our Expertise</h1>
+        <div class="flex">
+            <img src="assets/images/code.jpg" alt="">
+            <img src="assets/images/code2.jpg" alt="">
+            <img src="assets/images/code3.jpg" alt="">
+            <img src="assets/images/code4.jpg" alt="">
+            <img src="assets/images/code5.jpg" alt="">
+        </div>
+    </section>
+    <div class="divider"></div>      
+    <section class="s4">
+        <img src="assets/images/students.jpg" alt="">
+        <div class="textbox">
+            <h1>Web Courses We Recomend</h1>
+            <p>
+                <b>W3Cx: HTML5 Apps and Games</b> - Increase your ability to design and deliver innovative services on the Web! <br><br>
+                <b>HarvardX: CS50's Web Programming with Python and JavaScript</b> - Take a deep dive into the design and implementation of web apps with Python, JavaScript, and SQL using frameworks<br><br>
+                <b>IBM: Full Stack Application Development Project</b> - Apply your knowledge of front end and back end development and deploy a full stack real-world web application on the cloud.<br><br>
+                <b>AWS: Amazon SageMaker: Simplifying Machine Learning Application Development</b> - Learn how to use Amazon SageMaker to put Machine Learning into your applications.
+            </p>
+            <div class="btn"><a href="courses.html">Read more</a></div>
+        </div>    
+    </section>
+    <my-footer></my-footer>
+    <script>
+        var home = document.getElementById('home') 
+        var aboutus = document.getElementById('aboutus') 
+        var theteam = document.getElementById('theteam') 
+        var courses = document.getElementById('courses') 
+
+        var page = document.getElementById('home');
+        page.classList.add("thispage")
+    </script>
+</body>
+</html>

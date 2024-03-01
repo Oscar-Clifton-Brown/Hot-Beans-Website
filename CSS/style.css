@@ -1,0 +1,399 @@
+@font-face {
+    font-family: "San Francisco regular";
+    /*font-weight: 400;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");*/
+    src: url(fonts/SF-Pro-Display-Regular.otf);
+}
+@font-face {
+    font-family: "San Francisco bold";
+    src: url(fonts/SF-Pro-Display-Bold.otf);
+}
+@font-face {
+    font-family: "San Francisco Medium";
+    src: url(fonts/SF-Pro-Display-Medium.otf);
+}
+@font-face {
+    font-family: "San Francisco light";
+    src: url(fonts/SF-Pro-Display-Light.otf);
+}
+
+
+:root {
+    --normal: 19px;
+    --large: calc(var(--normal) * 1.618); 
+    --larger: calc(var(--large) * 1.618); 
+    --small: calc(var(--normal) / 1.618);
+    --orange: #fce8d4;
+    --dark-orange: #ffbf80;
+  }
+body {
+    font-family: "San Francisco regular";
+    font-size: var(--normal);
+    margin:0;
+}
+a{
+    text-decoration: none;
+    font-weight:100;
+}
+.textbox{
+    width:30vw;
+    margin-left: 50px;
+}
+.textbox h1{
+    font-size: var(--large);
+    font-weight: bold;
+    margin: 55px 0 30px 0;
+}
+.textbox p{
+    letter-spacing: 0.5px;
+    line-height: 38px;
+    text-align:justify;
+    text-justify:inter-word;
+    font-family: "San Francisco light";
+
+}
+nav{
+    width: 70vw;
+    left: 15vw;
+    display: flex;
+    top: 25px;
+    border-radius: 500px;
+    position:fixed;
+    z-index: 100;
+    background-color: rgba(143, 143, 143, 0.04);
+    background-blend-mode: multiply;
+    backdrop-filter: blur(10px);
+    opacity: 1;
+}
+nav img{
+    height: 35px;
+    margin: 15px 0 15px 50px;
+    box-sizing: border-box;
+    
+}
+
+nav .links-container{
+    display: flex;
+    height:100%;
+    width: 35vw;
+    margin:auto 0;
+    margin-left:5vw;
+}
+nav .links-container a{
+    margin: auto;
+    font-size: var(--normal);
+    color:black;
+    transition:0.2s;
+
+}
+
+nav .links-container a:hover{
+    color: rgb(61, 61, 61);
+    font-size: calc(var(--normal) * 1.1);
+    text-decoration-color: rgb(61, 61, 61);
+
+}
+nav .btn-box{
+    margin:auto 0;
+    margin-left:auto;
+    padding-right:13px
+}
+.thispage{
+    -webkit-text-decoration: black solid underline;
+    text-decoration: black solid underline;
+    -webkit-text-decoration-skip: ink;
+    text-decoration-skip: ink;
+}
+.btn{
+    padding: 10px 20px;
+    width: fit-content;
+    border-radius: 100px;
+    background-color: var(--dark-orange);
+
+}
+.btn a{
+    color: black;    
+}
+.s1{
+    max-width:100vw;
+    box-sizing: border-box;
+}
+.s1 img{
+    width: 100%;
+    height:95vh;
+    object-fit: cover;
+    border-radius: 0  0 2vw 2vw;
+    box-shadow: 0 2px 20px #555;
+}
+.s2{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: min-content auto auto auto auto;
+    gap:0;
+    margin-top: 50px;
+}
+.s2 img{
+    box-sizing: border-box;
+    object-fit: cover;
+    box-shadow: 0px 0px 25px #777;
+}
+.s2 .i1{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    height: 1000px;
+    width: 35vw;
+    margin:auto 5vw auto 10vw;
+}
+.s2 .i2{
+    grid-row-start: auto;
+    grid-row-end: auto;
+    margin: 100px 10vw 0 auto;
+    height: fit-content;
+}
+.s2 .i3{
+    grid-row-start: auto;
+    grid-row-end: auto;
+    width: 40vw;
+    height: 300px;
+    margin: 200px auto 150px auto;
+}
+.s2 .i4{
+    font-family: "San Francisco bold";
+    grid-row-start: auto;
+    grid-row-end: auto;
+    background-color: antiquewhite;
+    height:300px;
+    width: 38vw;
+    margin:50px auto 60px 4.8vw;
+    box-sizing: border-box;
+    padding: 50px;
+    border-radius: 0 20px 0 20px;
+    box-shadow: 0px 0px 25px #999;
+}
+.s2 .i4 strong{
+    letter-spacing: 1px;
+    font-size: var(--large);
+    line-height: 100px;
+}
+.s2 .i4 i{
+    font-family: "San Francisco light";
+    letter-spacing: 4px;
+}
+.s2 .i5{
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    width: 45vw;
+    height:900px;
+    margin:0 10vw 0 0;
+}
+.s2 .i6{
+    grid-row-start: auto;
+    grid-row-end: auto;
+    width:25vw;
+    height: 650px;
+    margin: 0 0 0 10vw;
+}
+.s2 .i7{
+    grid-row-start: auto;
+    grid-row-end: auto;
+    margin:80px 0 0 12vw
+}
+.s2 .i8{
+    grid-row-start: auto;
+    grid-row-end: auto;
+    width: 30vw;
+    height: 100%;
+    margin-left: 50px;
+}
+.s2 .i2{
+    grid-row-start: auto;
+    grid-row-end: auto;
+}
+.s3 h1{
+    text-align: center;
+    margin: 80px 0;
+}
+.s3 .flex{
+    display: flex;
+    max-width: 100vw;
+    padding: 0 5vw;
+    box-sizing:border-box;
+    justify-content: space-between;
+}
+.s3 .flex img{
+    margin:0;
+    width:15vw;
+    height: 400px;
+    object-fit:cover;
+
+}
+.divider{
+    width: 80vw;
+    height: 2px;
+    background-color: #303030;
+    margin:75px 10vw;   
+}
+.s4{
+   display: flex; 
+   max-width:100vw
+}
+.s4 img{
+   width: 30vw;
+   height: 900px;
+   margin-left:8vw;
+   object-fit: cover;
+
+}
+.s4 .textbox{
+    margin:0;
+    margin: auto 0 auto 12vw;
+}
+
+
+/*~~~~~~~~~~~~*/
+
+
+.pagetitle{
+    margin-top: 150px;
+    max-width: 100vw;
+}
+
+.pagetitle h1{
+    font-family: "San Francisco bold";
+    font-size: var(--larger);
+    margin-left: 20vw;
+    letter-spacing: 15px;
+}
+.a1{
+    max-width: 100vw;
+    box-sizing: border-box;
+    padding: 0 5vw;
+    height: fit-content;
+}
+.a1 img{
+    object-fit: cover;
+    width: 100%;
+    height: 70vh;
+}
+.a1 h1{
+    position: relative;
+    text-align: center;
+    font-family: "San Francisco regular";
+    font-size: var(--larger);
+    letter-spacing: 1px;
+    margin-top: 75px;
+}
+.a1 i{
+    font-family: "San Francisco light";
+    font-size: var(--larger);
+    letter-spacing: 10px;
+}
+.a1 .box{
+    position:relative;
+    width: 35vw;
+    height: 200px;
+    left:44vw;
+    top: -131px;
+    background-color: var(--orange);
+    z-index: -1;
+}
+
+.a2{
+    width: 96vw;
+    margin: 0 2vw;
+    display: grid;
+    grid-gap: 2vw;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    
+
+}
+.a2 img{
+    width: 100%;
+    height: 30vw;
+    object-fit: cover;
+}
+.a2 .textbox{
+    width: 80%;
+    margin: 0 auto 80px auto;
+}
+.a3{
+    display:flex;
+    max-width: 100vw;
+}
+
+.a3 img{
+    width: 50vw;
+    height: 50vw;
+    object-fit: cover;
+    margin: 5vw;
+    margin-bottom: 0;
+}
+
+/* ~~~~~~~~~~ */
+
+
+.m1{
+    background-color: var(--orange);
+    max-width: 100vw;
+    padding-top: 75px
+}
+.m1 .row-container{
+    display: flex;
+    justify-content: space-between;
+    width:70vw;
+    margin-left:10vw
+}
+.m1 .row-container:nth-child(2){
+    margin-left: 20vw
+}
+.m1 .row-container .img-container{
+    position: relative;
+    width:20vw;
+}
+.m1 .row-container .img-container img{
+    width:20vw;
+    height: 500px;
+    object-fit:cover;
+}
+.m1 .row-container .img-container p{
+    position:relative;
+    top:-120px;
+    right: -40px
+}
+.m1 .row-container .img-container strong{
+    position:relative;
+    top:-120px;
+    right: -40px;
+    font-family: "San Francisco Medium";
+
+}   
+
+.m2{
+    margin: 100px 0 120px 100px;
+    display: flex;
+}
+.m2 .btn-container{
+    margin: auto;
+}
+.m2 .btn-container{
+    background-color: var(--orange);
+    padding: 60px 120px;
+    border-radius: 500px;
+}
+
+.c1 .flex-container{
+    display: flex;
+    width: 92vw;
+    margin:150px auto;
+    height: 110vh;
+}
+.c1 .flex-container img{
+    margin: auto;
+    width: 45vw;
+    height: 100%;
+    object-fit: cover;
+}
+.c1 .flex-container .textbox{
+    margin: auto;
+}
